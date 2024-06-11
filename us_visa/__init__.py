@@ -1,13 +1,14 @@
 import os
 import sys
 
-import numpy as np
 import dill
 import yaml
 from pandas import DataFrame
 
+
 from us_visa.exception import USvisaException
 from us_visa.logger import logging
+import numpy as np
 
 
 def read_yaml_file(file_path: str) -> dict:
