@@ -1,7 +1,6 @@
 import os
 import sys
 
-
 from pandas import DataFrame
 from sklearn.model_selection import train_test_split
 
@@ -71,7 +70,7 @@ class DataIngestion:
             logging.info(f"Exported train and test file path.")
         except Exception as e:
             raise USvisaException(e, sys) from e
-        
+
     def initiate_data_ingestion(self) ->DataIngestionArtifact:
         """
         Method Name :   initiate_data_ingestion

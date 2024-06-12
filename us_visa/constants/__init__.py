@@ -3,7 +3,7 @@ from datetime import date
 
 DATABASE_NAME = "US_VISA"
 
-COLLECTION_NAME = "visa_data"
+COLLECTION_NAME = "VISA_DATA"
 
 MONGODB_URL_KEY = "MONGODB_URL"
 
@@ -19,7 +19,6 @@ PREPROCSSING_OBJECT_FILE_NAME = "preprocessing.pkl"
 FILE_NAME: str = "usvisa.csv"
 TRAIN_FILE_NAME: str = "train.csv"
 TEST_FILE_NAME: str = "test.csv"
-SCHEMA_FILE_PATH = os.path.join("config", "schema.yaml")
 
 """
 Data Ingestion related constant start with DATA_INGESTION VAR NAME

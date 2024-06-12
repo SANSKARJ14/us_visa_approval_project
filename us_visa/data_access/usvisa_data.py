@@ -5,6 +5,8 @@ import pandas as pd
 import sys
 from typing import Optional
 import numpy as np
+import logging
+from pandas import DataFrame
 
 
 
@@ -39,4 +41,6 @@ class USvisaData:
             df.replace({"na":np.nan},inplace=True)
             return df
         except Exception as e:
-            raise USvisaException(e,sys)
+            raise USvisaException(e,sys)           
+        
+    
